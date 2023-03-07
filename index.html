@@ -8,6 +8,53 @@
     <title>Guitar Form</title>
 </head>
 <body>
-    
+    <form action="">
+        <div class="form-section">
+            <img src="guitar-background.jpeg" alt="Image of a guitar">
+        </div>
+        <div class="form-section">
+            <h2>The Guitar Journal &#8482 Form</h2>
+            <div class="form-row">
+                <div class="input">
+                    <label for="fname" title="First Name">First Name: </label>
+                    <br>
+                    <input type="text" id="fname" name="fname" required autofocus placeholder="John">
+                </div>
+                <div class="input">
+                    <label for="lname" title="Last Name">Last Name: </label>
+                    <br>
+                    <input type="text" id="lname" name="lname" required placeholder="Doe">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="input">
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="johndoe@gmail.com">
+                </div>
+                <div class="input">
+                    <label for="phone">Phone Number</label>
+                    <br>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="input">
+                    <label for="password">Password</label>
+                    <br>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="input">
+                    <label for="confirm">Confirm Password</label>
+                    <br>
+                    <input type="password" name="confirm" id="confirm" required>
+                </div>
+            </div>
+
+            <button class="button" type="submit">Submit</button>
+        </div>
+    </form>
 </body>
 </html>

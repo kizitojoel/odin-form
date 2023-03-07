@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root
+{
+    /* 
+       Color palette for my website 
+       Going for a minimal but warm feel
+    */
+    --cream: #EAE7DC;
+    --suede: #D8C3A5;
+    --grey: #8E8D8A;
+    --pink: #E98074;
+    --orange: #E85A48;
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'PT Serif', 'Times New Roman' ,serif;
+}
+body
+{
+    background-color: var(--cream);
+}
+form
+{
+    display: flex;
+    margin-left: auto;
+    
+}
+.form-section:nth-of-type(2)
+{
+    display: flex;
+    flex-direction: column;
+}
+.form-section > img
+{
+    height: 100vh;
+    width: auto;
+}
+.button
+{
+    height: 24px;
+}
+.form-row
+{
+    display: flex;
+}
