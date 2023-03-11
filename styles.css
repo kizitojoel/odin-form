@@ -32,6 +32,26 @@ body img{
     height: 100vh;
     width: auto;
 }
+.left{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.banner
+{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    background-color: rgba(25, 25, 32, 0.5);
+    height: 15%;
+    color: var(--suede);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    
+}
+
 .button
 {
     height: 36px;
@@ -97,8 +117,9 @@ input
 }
 input:invalid
 {
-    border-radius: 5px solid red;
+    border: 2px solid red;
 }
+
 .input
 {
     width: 40%;
