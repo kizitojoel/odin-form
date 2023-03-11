@@ -17,33 +17,123 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: 'PT Serif', 'Times New Roman' ,serif;
+    font-family: 'PT Serif', 'Times New Roman', serif;
 }
 body
 {
     background-color: var(--cream);
 }
-form
-{
+main{
     display: flex;
-    margin-left: auto;
-    
+    flex-flow: row;
+    align-items: center;
 }
-.form-section:nth-of-type(2)
-{
-    display: flex;
-    flex-direction: column;
-}
-.form-section > img
-{
+body img{
     height: 100vh;
     width: auto;
 }
 .button
 {
-    height: 24px;
+    height: 36px;
+    border-radius: 5px;
+    background-color: var(--cream);
+    border: 2px solid var(--orange);
+    padding-left: 12px;
+    padding-right: 12px;   
+}
+button:hover
+{
+    border: 2px solid var(--orange);
+    opacity: 100%;
+}
+h2{
+    text-decoration: wavy;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.right
+{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    max-height: 100vh;
+}
+form
+{
+    /* flex-grow: 1; */
+    border: 2px solid var(--pink);
+    background-color: var(--pink);
+    opacity: 70%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+.form-header
+{
+    opacity: 100%;
 }
 .form-row
 {
     display: flex;
+    justify-content: left;
+    flex-grow: 1;
+    padding-left: 2rem;
+    gap: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+}
+input
+{
+    border-radius: 5px;
+    background-color: var(--cream);
+    height: 2rem;
+    padding: 0.25rem;
+    border: 1px solid var(--suede);
+    flex-grow: 1;
+}
+input:invalid
+{
+    border-radius: 5px solid red;
+}
+.input
+{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.right p
+{
+    font-size: 20px;
+    padding: 12px;
+}
+@media only screen and (max-width: 800px){
+    main{
+        flex-direction: column;
+        align-self: center;
+    }
+    main img{
+        max-width: 100vw;
+    }
+    
+
+    .right
+    {
+        width: 100%;
+    }
+    .form-row{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        padding: 0px;
+    }
+    .input
+    {
+        width: 80%;
+    }
 }
