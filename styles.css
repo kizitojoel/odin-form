@@ -36,6 +36,14 @@ body img{
     display: flex;
     flex-direction: column;
     position: relative;
+    background: url(./guitar-background.jpeg);
+    background-attachment: fixed;
+    flex-grow: 1;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-width: 50vw;
 }
 .banner
 {
@@ -156,5 +164,10 @@ input:invalid
     .input
     {
         width: 80%;
+    }
+    .left
+    {
+        width: 100vw;
+        height: 20vh;
     }
 }
