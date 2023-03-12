@@ -36,8 +36,7 @@ body img{
     display: flex;
     flex-direction: column;
     position: relative;
-    background: url(./guitar-background.jpeg);
-    background-attachment: fixed;
+    background: url(assets/guitar-background.jpeg);
     flex-grow: 1;
     background-size: cover;
     align-items: center;
